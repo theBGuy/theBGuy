@@ -1,5 +1,6 @@
 ![github stats](https://github-readme-stats.vercel.app/api?username=theBGuy&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
-
+![top-langs](https://github-readme-stats.vercel.app/api/top-langs/?username=theBGuy&theme=tokyonight&layout=compact)
+> *work on professional accounts and private repos not included in these stats
 <!--
 **theBGuy/theBGuy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
