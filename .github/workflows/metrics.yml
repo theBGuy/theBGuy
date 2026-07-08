@@ -15,8 +15,10 @@
 #   3. Push (or run the workflow manually from the Actions tab). The first run
 #      generates metrics.svg and commits it; the README embed resolves after that.
 #
-# Supply-chain note: pinned to @latest for simplicity. For stricter safety you
-# can pin to a specific release tag or commit SHA instead.
+# Supply-chain note: pinned to an immutable commit SHA (below) rather than the
+# moving @latest branch. That SHA is metrics v3.34 — which is also exactly what
+# @latest points at today, so this pins the known-good code without downgrading.
+# To update later, bump the SHA to a newer reviewed commit.
 
 name: Metrics
 on:
@@ -34,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate metrics
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34 — immutable SHA pin (== @latest as of 2026-07)
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: theBGuy
@@ -45,10 +47,10 @@ jobs:
           # to stay consistent with the rest of the profile.
           base: header
 
-          # Most-used languages, private repos included (via the token above).
-          # indepth clones repos for accurate analysis, private ones included.
+          # Most-used languages via GitHub's standard per-repo analysis
+          # (lightweight; includes private repos your token can read).
+          # DO NOT re-enable plugin_languages_indepth: on an account this size it
+          # builds a ~188MB dataset that OOM-crashes the SVG renderer (exit 133).
           plugin_languages: yes
           plugin_languages_details: percentage
           plugin_languages_limit: 8
-          plugin_languages_indepth: yes
-          plugin_languages_sections: most-used
