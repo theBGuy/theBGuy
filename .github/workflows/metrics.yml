@@ -1,0 +1,54 @@
+# Renders github metrics into ./metrics.svg on a schedule and commits it back.
+# Self-hosted stats via GitHub Actions — no Vercel, no third-party server, and
+# (unlike the public github-readme-stats instance) it can count your PRIVATE and
+# ORGANIZATION work, because it authenticates with your own token.
+#
+# One-time setup (only you can do this part):
+#   1. Create a classic Personal Access Token:
+#      GitHub → Settings → Developer settings → Personal access tokens →
+#      Tokens (classic) → Generate new token (classic).
+#      Scopes: repo, read:org, read:user   (repo = include private repos;
+#      read:org = include organization repos like blizzhackers). No expiry, or
+#      set a reminder to rotate it.
+#   2. Add it to THIS repo as a secret named METRICS_TOKEN:
+#      repo → Settings → Secrets and variables → Actions → New repository secret.
+#   3. Push (or run the workflow manually from the Actions tab). The first run
+#      generates metrics.svg and commits it; the README embed resolves after that.
+#
+# Supply-chain note: pinned to @latest for simplicity. For stricter safety you
+# can pin to a specific release tag or commit SHA instead.
+
+name: Metrics
+on:
+  schedule:
+    - cron: "0 6 * * *"      # rebuild once a day
+  workflow_dispatch:          # allow manual runs from the Actions tab
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: write             # lets the action commit metrics.svg back
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: theBGuy
+          filename: metrics.svg
+          template: classic
+
+          # Restrained by design: the summary header + a languages breakdown,
+          # to stay consistent with the rest of the profile.
+          base: header
+
+          # Most-used languages, private repos included (via the token above).
+          # indepth clones repos for accurate analysis, private ones included.
+          plugin_languages: yes
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_indepth: yes
+          plugin_languages_sections: most-used
