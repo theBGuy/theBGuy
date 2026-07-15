@@ -26,8 +26,9 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
     </td>
     <td width="50%" valign="top">
       <b><a href="https://gitdesktop.app">GitDesktop</a></b><br>
-      <sub>Creator</sub><br><br>
-      An AI-native, keyboard-first Git desktop client. Tauri 2 + React 19 with a Rust backend, in development toward its first public release.
+      <sub>Creator · cross-platform, self-updating</sub><br><br>
+      GitHub Desktop's ease, taken further — and keyboard-first: the whole PR lifecycle in-app (down to offline local PRs), a GitHub Actions cockpit, plus issues, discussions, and AI across GitHub, GitLab, and Bitbucket. CLI-based, so your tokens are never stored; AI runs on whatever provider you choose, local models included. Tauri 2 + React 19 + Rust.<br>
+      <sub><a href="https://github.com/theBGuy/GitDesktop">github.com/theBGuy/GitDesktop</a></sub>
     </td>
   </tr>
   <tr>
