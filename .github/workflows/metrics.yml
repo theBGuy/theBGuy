@@ -70,3 +70,16 @@ jobs:
           plugin_languages: yes
           plugin_languages_details: percentage
           plugin_languages_limit: 8
+
+          # Hide the header's "Contributed to N repositories" line. That number
+          # comes from GitHub's `repositoriesContributedTo` field, which the API
+          # now rejects outright for this account (RESOURCE_LIMITS_EXCEEDED) — it
+          # fails for EVERY argument variant (includeUserRepositories true/false,
+          # first:1, single contributionTypes, privacy:PUBLIC), so metrics renders
+          # it blank and no config can bring the real count back. extras_css is
+          # injected into the template's <style> (enabled by default in the
+          # Action); `!important` overrides metrics' own rules. Selector: the
+          # header row is the ONLY `.row`; its second (right) <section> ends with
+          # the Contributed-to field, so this hits nothing else.
+          extras_css: |
+            .row section:last-child .field:last-child { display: none !important; }
