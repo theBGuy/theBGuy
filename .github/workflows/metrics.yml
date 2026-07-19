@@ -47,6 +47,22 @@ jobs:
           # to stay consistent with the rest of the profile.
           base: header
 
+          # Fetch repositories in SMALL pages. metrics' base repository query
+          # pulls ~11 costly per-repo connection counts (stargazers, watchers,
+          # issues x2, pullRequests x3, releases, deployments, environments) PLUS
+          # languages. At the default 100 repos/request, that single GraphQL query
+          # trips GitHub's server-side complexity ceiling (RESOURCE_LIMITS_EXCEEDED)
+          # once the account has enough repos/PRs/issues — GitHub then returns
+          # `user: null`, so metrics silently renders "0 Languages" and a blank
+          # "Contributed to N repositories" and commits that empty SVG (the job
+          # still reports success). Paginating in pages of 20 keeps each query
+          # ~5x under the limit; metrics stitches the pages back together, so no
+          # data is lost — just a few extra GraphQL requests (quota is 5000/hr).
+          # NOTE: this is a GitHub-side query-cost limit, so a self-hosted or
+          # local Docker runner would behave identically — it is not fixable by
+          # more RAM. It is also unrelated to the indepth OOM warned about below.
+          repositories_batch: 20
+
           # Most-used languages via GitHub's standard per-repo analysis
           # (lightweight; includes private repos your token can read).
           # DO NOT re-enable plugin_languages_indepth: on an account this size it
