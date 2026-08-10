@@ -14,7 +14,7 @@ Creator of GitDesktop. Co-founder of Dispatch.
 
 I build backend infrastructure and the frontend interfaces that sit on top of it: the seam where they have to hold together under load. Distributed event pipelines, developer tooling, real-time systems. 6+ years in, the through-line is correctness and usability at scale. I pick the tool that keeps the system honest, then build it so it stays that way in production.
 
-## Selected work
+## Featured work
 
 <!--
   Counts in the GitDesktop and kolbot rows are refreshed nightly by
