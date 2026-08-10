@@ -83,3 +83,38 @@ jobs:
           # the Contributed-to field, so this hits nothing else.
           extras_css: |
             .row section:last-child .field:last-child { display: none !important; }
+
+  # Refreshes the star/fork/download/version counts embedded in README.md.
+  # Hardcoded counts rot silently — kolbot's was 4 stars stale before this
+  # existed — so the numbers are markers the script rewrites instead.
+  update-stats:
+    needs: github-metrics
+    if: always()              # a metrics failure must not freeze the counts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Explicit, because the scheduled event's SHA predates the metrics.svg
+          # commit the job above just pushed; checking that out would make our
+          # own push a non-fast-forward.
+          ref: main
+
+      - name: Refresh counts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/update-stats.sh README.md
+
+      - name: Commit
+        run: |
+          if git diff --quiet README.md; then
+            echo "counts unchanged"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(readme): refresh project counts"
+          # Committed as GITHUB_TOKEN, which by design does not trigger another
+          # workflow run — that is what keeps the push: trigger above from looping.
+          git pull --rebase --autostash
+          git push

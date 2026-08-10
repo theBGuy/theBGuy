@@ -4,7 +4,7 @@
 
 **Building systems that hold up under pressure.**
 
-Software engineer building scalable web apps, developer tools, and real-time systems.
+Creator of GitDesktop. Co-founder of Dispatch.
 
 <sub>Go · TypeScript · React · React Native · PostgreSQL · Redis · Docker</sub>
 
@@ -12,11 +12,28 @@ Software engineer building scalable web apps, developer tools, and real-time sys
 
 ---
 
-I build backend infrastructure and the frontend interfaces that sit on top of it — at the seam where they have to hold together under load. Distributed event pipelines, developer tooling, real-time systems. 6+ years in, and the through-line isn't a language; it's correctness and usability at scale. I pick the tool that keeps the system honest, then build it so it stays that way in production.
+I build backend infrastructure and the frontend interfaces that sit on top of it: the seam where they have to hold together under load. Distributed event pipelines, developer tooling, real-time systems. 6+ years in, the through-line is correctness and usability at scale. I pick the tool that keeps the system honest, then build it so it stays that way in production.
 
 ## Selected work
 
+<!--
+  Counts in the GitDesktop and kolbot rows are refreshed nightly by
+  .github/workflows/metrics.yml, which rewrites the text between the paired
+  stats markers. Those markers are HTML comments, so GitHub strips them at
+  render time. Deleting one fails that workflow by design, rather than letting
+  the number silently rot.
+-->
+
 <table>
+  <tr>
+    <td colspan="2" valign="top">
+      <b><a href="https://gitdesktop.app">GitDesktop</a></b><br>
+      <sub>Creator · Windows, macOS, Linux · signed, verified auto-updates · Apache-2.0</sub><br>
+      <sub><b><!--stats:gd-stars-->149<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->11<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->806<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.8.0<!--/stats:gd-version-->, first released June 2026</sub><br><br>
+      Keyboard-first Git client for GitHub, GitLab, and Bitbucket: the whole PR lifecycle in-app (down to offline local PRs), a GitHub Actions cockpit, plus issues, discussions, and AI. GitHub and GitLab run through their own CLIs, so those tokens are never stored; AI runs on whatever provider you choose, local models included. Tauri 2 + React 19 + Rust.<br>
+      <sub><a href="https://github.com/theBGuy/GitDesktop">github.com/theBGuy/GitDesktop</a> · <a href="https://github.com/theBGuy/GitDesktop/releases/latest">Download</a> · <a href="https://gitdesktop.app">gitdesktop.app</a></sub>
+    </td>
+  </tr>
   <tr>
     <td width="50%" valign="top">
       <b><a href="https://dispatch.tech">Dispatch</a></b><br>
@@ -25,43 +42,40 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
       <sub><a href="https://docs.dispatch.tech">docs.dispatch.tech</a></sub>
     </td>
     <td width="50%" valign="top">
-      <b><a href="https://gitdesktop.app">GitDesktop</a></b><br>
-      <sub>Creator · cross-platform, self-updating</sub><br><br>
-      GitHub Desktop's ease, taken further — and keyboard-first: the whole PR lifecycle in-app (down to offline local PRs), a GitHub Actions cockpit, plus issues, discussions, and AI across GitHub, GitLab, and Bitbucket. CLI-based, so your tokens are never stored; AI runs on whatever provider you choose, local models included. Tauri 2 + React 19 + Rust.<br>
-      <sub><a href="https://github.com/theBGuy/GitDesktop">github.com/theBGuy/GitDesktop</a></sub>
+      <b><a href="https://github.com/blizzhackers/kolbot">kolbot</a></b><br>
+      <sub>Lead maintainer since 2022 · <!--stats:kolbot-stars-->291<!--/stats:kolbot-stars-->&#9733; / <!--stats:kolbot-forks-->194<!--/stats:kolbot-forks--> forks</sub><br><br>
+      Diablo II automation framework with <b>over a decade</b> of continuous development, still actively maintained. Re-architected a legacy codebase into a layered module hierarchy and built a plugin system on top of it.
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/blizzhackers/kolbot">kolbot</a></b><br>
-      <sub>Lead maintainer since 2022 · 287&#9733; / 191 forks</sub><br><br>
-      Widely used Diablo II automation framework with <b>thousands of active users</b>. Re-architected a legacy codebase into a layered module hierarchy and built a plugin system on top of it.
-    </td>
     <td width="50%" valign="top">
       <b><a href="https://github.com/blizzhackers/kolbot-SoloPlay">kolbot-SoloPlay</a></b><br>
-      <sub>Creator &amp; lead dev · 71&#9733; / 31 forks</sub><br><br>
+      <sub>Creator &amp; lead dev · <!--stats:soloplay-stars-->74<!--/stats:soloplay-stars-->&#9733; / <!--stats:soloplay-forks-->32<!--/stats:soloplay-forks--> forks</sub><br><br>
       Solo-play progression automation covering all <b>7 D2 classes</b>, driven by a profile-based config layer and a progression state machine.
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <b><a href="https://github.com/blizzhackers/limedrop">limedrop</a></b><br>
       <sub>jQuery → React + TypeScript rewrite</sub><br><br>
       Led a full rewrite onto React + TypeScript: Web Workers for off-thread compute, React Window virtualization, and a structured rule builder.
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <b><a href="https://github.com/theBGuy/discord-semantic-search">discord-semantic-search</a></b><br>
       <sub>Local-first RAG</sub><br><br>
       Semantic search over Discord history, entirely local: Ollama embeddings into Postgres/pgvector. No data leaves the machine.
     </td>
+    <td width="50%" valign="top">
+      <b>More tooling</b><br>
+      <sub>VS Code extensions, a Wails desktop app, an npm utility</sub><br><br>
+      <sub><a href="https://github.com/theBGuy/vs-pkg-uninstaller">vs-pkg-uninstaller</a>, <a href="https://github.com/theBGuy/vs-react-native-stylesheet-cleaner">vs-react-native-stylesheet-cleaner</a>, and <a href="https://github.com/theBGuy/vsnip-check">vsnip-check</a> for VS Code; <a href="https://github.com/theBGuy/go-work-tracker">go-work-tracker</a> on Wails; the dependency-free <a href="https://github.com/theBGuy/array-remove">array-remove</a>. Everything else lives across <a href="https://github.com/theBGuy?tab=repositories">my repositories</a>.</sub>
+    </td>
   </tr>
 </table>
 
-<sub>More developer tooling — VS Code extensions (<a href="https://github.com/theBGuy/vs-pkg-uninstaller">vs-pkg-uninstaller</a>, <a href="https://github.com/theBGuy/vs-react-native-stylesheet-cleaner">vs-react-native-stylesheet-cleaner</a>, <a href="https://github.com/theBGuy/vsnip-check">vsnip-check</a>), a Wails desktop app (<a href="https://github.com/theBGuy/go-work-tracker">go-work-tracker</a>), and a dependency-free npm utility (<a href="https://github.com/theBGuy/array-remove">array-remove</a>) — lives across <a href="https://github.com/theBGuy?tab=repositories">my repositories</a>.</sub>
-
 ## Stack
 
-Grouped by where it sits in the system — chosen for the job, not the language.
+Grouped by where it sits in the system; chosen for the job, not the language.
 
 <b>Languages</b> &nbsp;
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
