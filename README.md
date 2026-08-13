@@ -29,7 +29,7 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
     <td colspan="2" valign="top">
       <b><a href="https://gitdesktop.app">GitDesktop</a></b><br>
       <sub>Creator · Windows, macOS, Linux · signed, verified auto-updates · Apache-2.0</sub><br>
-      <sub><b><!--stats:gd-stars-->166<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->15<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->1,126<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.8.0<!--/stats:gd-version-->, first released June 2026</sub><br><br>
+      <sub><b><!--stats:gd-stars-->173<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->15<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->1,153<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.8.0<!--/stats:gd-version-->, first released June 2026</sub><br><br>
       Keyboard-first Git client for GitHub, GitLab, and Bitbucket: the whole PR lifecycle in-app (down to offline local PRs), a GitHub Actions cockpit, plus issues, discussions, and AI. GitHub and GitLab run through their own CLIs, so those tokens are never stored; AI runs on whatever provider you choose, local models included. Tauri 2 + React 19 + Rust.<br>
       <sub><a href="https://github.com/theBGuy/GitDesktop">github.com/theBGuy/GitDesktop</a> · <a href="https://github.com/theBGuy/GitDesktop/releases/latest">Download</a> · <a href="https://gitdesktop.app">gitdesktop.app</a></sub>
     </td>
