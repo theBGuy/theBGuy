@@ -29,7 +29,7 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
     <td colspan="2" valign="top">
       <b><a href="https://gitdesktop.app">GitDesktop</a></b><br>
       <sub>Creator · Windows, macOS, Linux · signed, verified auto-updates · Apache-2.0</sub><br>
-      <sub><b><!--stats:gd-stars-->198<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->16<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->1,585<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.9.4<!--/stats:gd-version-->, first released June 2026</sub><br><br>
+      <sub><b><!--stats:gd-stars-->200<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->16<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->1,597<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.9.4<!--/stats:gd-version-->, first released June 2026</sub><br><br>
       Keyboard-first Git client for GitHub, GitLab, and Bitbucket: the whole PR lifecycle in-app (down to offline local PRs), a GitHub Actions cockpit, plus issues, discussions, and AI. GitHub and GitLab run through their own CLIs, so those tokens are never stored; AI runs on whatever provider you choose, local models included. Tauri 2 + React 19 + Rust.<br>
       <sub><a href="https://github.com/theBGuy/GitDesktop">github.com/theBGuy/GitDesktop</a> · <a href="https://github.com/theBGuy/GitDesktop/releases/latest">Download</a> · <a href="https://gitdesktop.app">gitdesktop.app</a></sub>
     </td>
@@ -50,7 +50,7 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
   <tr>
     <td width="50%" valign="top">
       <b><a href="https://github.com/blizzhackers/kolbot-SoloPlay">kolbot-SoloPlay</a></b><br>
-      <sub>Creator &amp; lead dev · <!--stats:soloplay-stars-->74<!--/stats:soloplay-stars-->&#9733; / <!--stats:soloplay-forks-->32<!--/stats:soloplay-forks--> forks</sub><br><br>
+      <sub>Creator &amp; lead dev · <!--stats:soloplay-stars-->75<!--/stats:soloplay-stars-->&#9733; / <!--stats:soloplay-forks-->32<!--/stats:soloplay-forks--> forks</sub><br><br>
       Solo-play progression automation covering all <b>7 D2 classes</b>, driven by a profile-based config layer and a progression state machine.
     </td>
     <td width="50%" valign="top">
