@@ -29,7 +29,7 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
     <td colspan="2" valign="top">
       <b><a href="https://gitdesktop.app">GitDesktop</a></b><br>
       <sub>Creator · Windows, macOS, Linux · signed, verified auto-updates · Apache-2.0</sub><br>
-      <sub><b><!--stats:gd-stars-->207<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->17<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->1,792<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.10.0<!--/stats:gd-version-->, first released June 2026</sub><br><br>
+      <sub><b><!--stats:gd-stars-->209<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->18<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->1,821<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.10.0<!--/stats:gd-version-->, first released June 2026</sub><br><br>
       Keyboard-first Git client for GitHub, GitLab, and Bitbucket: the whole PR lifecycle in-app (down to offline local PRs), a GitHub Actions cockpit, plus issues, discussions, and AI. GitHub and GitLab run through their own CLIs, so those tokens are never stored; AI runs on whatever provider you choose, local models included. Tauri 2 + React 19 + Rust.<br>
       <sub><a href="https://github.com/theBGuy/GitDesktop">github.com/theBGuy/GitDesktop</a> · <a href="https://github.com/theBGuy/GitDesktop/releases/latest">Download</a> · <a href="https://gitdesktop.app">gitdesktop.app</a></sub>
     </td>
@@ -43,7 +43,7 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
     </td>
     <td width="50%" valign="top">
       <b><a href="https://github.com/blizzhackers/kolbot">kolbot</a></b><br>
-      <sub>Lead maintainer since 2022 · <!--stats:kolbot-stars-->291<!--/stats:kolbot-stars-->&#9733; / <!--stats:kolbot-forks-->194<!--/stats:kolbot-forks--> forks</sub><br><br>
+      <sub>Lead maintainer since 2022 · <!--stats:kolbot-stars-->291<!--/stats:kolbot-stars-->&#9733; / <!--stats:kolbot-forks-->193<!--/stats:kolbot-forks--> forks</sub><br><br>
       Diablo II automation framework with <b>over a decade</b> of continuous development, still actively maintained. Re-architected a legacy codebase into a layered module hierarchy and built a plugin system on top of it.
     </td>
   </tr>
