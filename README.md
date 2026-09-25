@@ -29,7 +29,7 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
     <td colspan="2" valign="top">
       <b><a href="https://gitdesktop.app">GitDesktop</a></b><br>
       <sub>Creator · Windows, macOS, Linux · signed, verified auto-updates · Apache-2.0</sub><br>
-      <sub><b><!--stats:gd-stars-->226<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->19<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->2,771<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.12.2<!--/stats:gd-version-->, first released June 2026</sub><br><br>
+      <sub><b><!--stats:gd-stars-->227<!--/stats:gd-stars--></b>&#9733; · <!--stats:gd-forks-->19<!--/stats:gd-forks--> forks · <b><!--stats:gd-downloads-->2,792<!--/stats:gd-downloads--></b> installer downloads · <!--stats:gd-version-->v0.12.2<!--/stats:gd-version-->, first released June 2026</sub><br><br>
       Keyboard-first Git client for GitHub, GitLab, and Bitbucket: the whole PR lifecycle in-app (down to offline local PRs), a GitHub Actions cockpit, plus issues, discussions, and AI. GitHub and GitLab run through their own CLIs, so those tokens are never stored; AI runs on whatever provider you choose, local models included. Tauri 2 + React 19 + Rust.<br>
       <sub><a href="https://github.com/theBGuy/GitDesktop">github.com/theBGuy/GitDesktop</a> · <a href="https://github.com/theBGuy/GitDesktop/releases/latest">Download</a> · <a href="https://gitdesktop.app">gitdesktop.app</a></sub>
     </td>
@@ -43,14 +43,14 @@ I build backend infrastructure and the frontend interfaces that sit on top of it
     </td>
     <td width="50%" valign="top">
       <b><a href="https://github.com/blizzhackers/kolbot">kolbot</a></b><br>
-      <sub>Lead maintainer since 2022 · <!--stats:kolbot-stars-->291<!--/stats:kolbot-stars-->&#9733; / <!--stats:kolbot-forks-->193<!--/stats:kolbot-forks--> forks</sub><br><br>
+      <sub>Lead maintainer since 2022 · <!--stats:kolbot-stars-->291<!--/stats:kolbot-stars-->&#9733; / <!--stats:kolbot-forks-->192<!--/stats:kolbot-forks--> forks</sub><br><br>
       Diablo II automation framework with <b>over a decade</b> of continuous development, still actively maintained. Re-architected a legacy codebase into a layered module hierarchy and built a plugin system on top of it.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <b><a href="https://github.com/blizzhackers/kolbot-SoloPlay">kolbot-SoloPlay</a></b><br>
-      <sub>Creator &amp; lead dev · <!--stats:soloplay-stars-->78<!--/stats:soloplay-stars-->&#9733; / <!--stats:soloplay-forks-->33<!--/stats:soloplay-forks--> forks</sub><br><br>
+      <sub>Creator &amp; lead dev · <!--stats:soloplay-stars-->78<!--/stats:soloplay-stars-->&#9733; / <!--stats:soloplay-forks-->32<!--/stats:soloplay-forks--> forks</sub><br><br>
       Solo-play progression automation covering all <b>7 D2 classes</b>, driven by a profile-based config layer and a progression state machine.
     </td>
     <td width="50%" valign="top">
